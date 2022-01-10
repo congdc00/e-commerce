@@ -20,3 +20,4 @@ import mediapipe as mp
 import cvzone
 import math
 import time
+import streamlit as st
