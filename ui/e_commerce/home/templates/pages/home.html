@@ -3,6 +3,19 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-    <h1>Xin chao</h1>
-    Toi ten la tao
+<div class="container-fluid">
+    <div class="row">
+        {% for product in Products %}
+        <div class="col-sm-4">
+            <a href="/{{product.id}}"><img src="{{product.image.url}}" alt="Sun-asterisk" style="width:300px;height:300px;"> </a>
+            <h4>{{product.name}}</h4>
+            Giá {{product.price}}đ
+        </div>
+        {% endfor %}
+        <br/>
+        {% if page_obj.has_next %}
+        <a href="{{request.path}}?page={{page_obj.next_page_number}}"> Tiếp theo </a>
+        {% endif %}
+    </div>
+</div>
 {% endblock %}
