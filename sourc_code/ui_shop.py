@@ -19,7 +19,7 @@ st.header("Đăng ký")
 # Bước 1
 st.subheader("Bước 1: Điền thông tin người dùng")
 label_face = st.text_input("Tên của bạn là")
-img_path = '../../data/face_img'
+img_path = '../data/face_img'
 face_path = os.path.join(img_path, label_face)
 
 #buoc 2
