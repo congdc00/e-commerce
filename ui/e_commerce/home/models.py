@@ -13,7 +13,7 @@ class Product(models.Model):
         return self.name
 
 class Comment(models.Model):
-    post = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='comments')
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='comments')
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    content = models.TextField()
+    body = models.TextField()
     date = models.DateTimeField(auto_now_add=True)

@@ -1,12 +1,26 @@
 {% extends "pages/base.html" %}
 
-{% block title %}{{Product.name}}{% endblock %}
+{% block title %}{{product.name}}{% endblock %}
 
 {% block content %}
 
-<h3><a href="{% url 'product' Product.id %}">{{Product.name}}</a></h3>
-<img src="{{Product.image.url}}" width="500px" height="300px" />
-<h6>on {{Product.price}}</h6>
-{{Product.infomation|safe|linebreaks}}
+<h3><a href="{% url 'product' product.pk %}">{{product.name}}</a></h3>
+<img src="{{product.image.url}}" width="500px" height="300px" />
+<h6> {{product.price}}</h6>
+{{product.infomation|safe|linebreaks}}
 
+{% for comment in product.comments.all %}
+    <h4><strong>{{comment.author}}</strong></h4>
+    <h6><p>{{comment.date}}</p></h6>
+    <p>{{comment.body|linebreaks}}</p>
+{% endfor %}
+{% if user.username %}
+    <form action="{% url 'product' product.pk %}" method="POST">
+        {% csrf_token %}
+        <p><label>Bình luận:</label></p>
+        {{form.body}}
+        <br/>
+        <input type="submit" value="Bình luận"/>
+    </form>
+{% endif %}
 {% endblock %}

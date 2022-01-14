@@ -1,6 +1,7 @@
-from django.shortcuts import render
-from django.http import HttpResponse
-from .models import Product
+from django.shortcuts import render, get_object_or_404
+from django.http import HttpResponse, HttpResponseRedirect
+from .forms import CommentForm
+from .models import Product, Comment
 from django.views.generic import ListView, DetailView
 
 # Create your views here.
@@ -16,9 +17,19 @@ class ProductListView(ListView):
     template_name = 'pages/product.html'"""
 def contact(request):
     return render(request, 'pages/contact.html')
-def product(request, id):
+"""def product(request, id):
     product = Product.objects.get(id = id)
     Data = {'Product': product}
-    return render(request, 'pages/product.html', Data)
+    return render(request, 'pages/product.html', Data)"""
 def error(request):
     return render(request, 'pages/error.html')
+
+def product(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    form = CommentForm()
+    if request.method == "POST":
+        form = CommentForm(request.POST, author=request.user, product=product)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect(request.path)
+    return render(request, "pages/product.html", {"product": product, "form": form})
