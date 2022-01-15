@@ -8,25 +8,32 @@
             <div class="col-sm-5">
                 <img src="{{product.image.url}}" width="500px" height="500px" />
             </div>
-            <div class="col-sm-2">
-                <h3>{{product.name}}</h3>
-                Mô tả sản phẩm
-                {{product.infomation|safe|linebreaks}}
-                <h6> Số lượng {{product.number}}</h6>
-                <h6> Địa chỉ {{product.location}}</h6>
-                <h6> Giá {{product.price}} đ</h6>
+            <div class="col-sm-6">
+                <div class="shadow-lg p-3 mb-5 bg-body rounded">
+                    <h3>{{product.name}}</h3>
+                    Mô tả sản phẩm
+                    {{product.infomation|safe|linebreaks}}
+                    <h6> Số lượng {{product.number}}</h6>
+                    <h6> Địa chỉ {{product.location}}</h6>
+                    <h6> Giá {{product.price}} đ</h6>
+                </div>
             </div>
         </div>
     </div>
-
+    <br>
     <h3><strong>Bình luận</strong></h3>
+    <br>
     {% for comment in product.comments.all %}
-        <h5>{{comment.author}}</h5>
-        {{comment.date}}
-        <p>{{comment.body|linebreaks}}</p>
+        <div class="shadow-sm p-3 mb-5 bg-body rounded">
+            <h5><p class="text-success">{{comment.author}}</p></h5>
+
+            <p class="font-monospace">{{comment.body|linebreaks}}</p>
+            <p class="fst-italic">{{comment.date}}</p>
+        </div>
     {% endfor %}
 
     {% if user.username %}
+    <div class="container-fluid">
         <form action="{% url 'product' product.pk %}" method="POST">
             {% csrf_token %}
             <p><label>Đánh giá sản phẩm:</label></p>
@@ -34,6 +41,7 @@
             <br/>
             <input type="submit" class="btn btn-primary" value="Bình luận"/>
         </form>
+    </div>
     {% endif %}
 
 {% endblock %}

@@ -12,3 +12,6 @@ def register(request):
             return HttpResponseRedirect('/')
     Data = {'form': form}
     return render(request, 'register.html', Data)
+
+def personal(request):
+    return render(request, 'personal.html')

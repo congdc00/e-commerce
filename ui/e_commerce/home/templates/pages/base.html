@@ -11,7 +11,7 @@
     <style>
         html, body{
             height: 100%;
-            background-color: #f8e4cc
+            background-color: #eeeeee
 
         }
     </style>
@@ -21,7 +21,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="/">Đinh Chí Công</a>
             <form class="d-flex">
-                <input class="form-control me-3 " type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control me-3 " type="search" placeholder="Nhập sản phẩm cần tìm" aria-label="Search">
                 <button class="btn btn-outline-primary" type="submit">Tìm_kiếm</button>
             </form>
             <div class="nav justify-content-end" id="navbarScroll">
@@ -33,7 +33,7 @@
                         <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
                             <li><a class="dropdown-item active" href="#">Thông báo</a></li>
                             <li><a class="dropdown-item" href="#">Theo dõi đơn hàng</a></li>
-                            <li><a class="dropdown-item" href="#">Thông tin cá nhân</a></li>
+                            <li><a class="dropdown-item" href="{% url 'personal' %}">Thông tin cá nhân</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="{% url 'logout' %}">Đăng xuất</a></li>
                         </ul>
