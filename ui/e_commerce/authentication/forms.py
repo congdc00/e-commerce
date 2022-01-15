@@ -1,6 +1,8 @@
 import re
 from django.core.exceptions import ObjectDoesNotExist
-from django.contrib.auth.models import User
+""" Dùng để custom admin """
+from django.contrib.auth import get_user_model
+User = get_user_model()
 from django import forms
 
 class RegistrationForm(forms.Form):
@@ -8,7 +10,7 @@ class RegistrationForm(forms.Form):
     email = forms.EmailField(label='Email')
     password1 = forms.CharField(label='Mật khẩu', widget=forms.PasswordInput())
     password2 = forms.CharField(label='Nhập lại mật khẩu', widget=forms.PasswordInput())
-
+    phone = forms.IntegerField(label='Số điệnt thoại ')
     def clean_password2(self):
         if 'password1' in self.cleaned_data:
             password1 = self.cleaned_data['password1']
@@ -28,4 +30,4 @@ class RegistrationForm(forms.Form):
         raise forms.ValidationError("Tài khoản đã tồn tại")
 
     def save(self):
-        User.objects.create_user(username=self.cleaned_data['username'], email=self.cleaned_data['email'], password=self.cleaned_data['password1'])
+        User.objects.create_user(username=self.cleaned_data['username'], email=self.cleaned_data['email'], password=self.cleaned_data['password1'], phone=self.cleaned_data['phone'])

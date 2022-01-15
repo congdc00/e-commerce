@@ -1,15 +1,29 @@
 {% extends "pages/base.html" %}
 
 {% block title %}Home{% endblock %}
-
+{% load static %}
 {% block content %}
 <div class="container-fluid">
+    <center><img src="{% static 'images/slideshow2.png' %}" class="img-fluid" width="1400" height="200" /></center>
+    <br>
     <div class="row">
         {% for product in Products %}
-        <div class="col-sm-4">
-            <a href="/{{product.id}}"><img src="{{product.image.url}}" alt="Sun-asterisk" style="width:300px;height:300px;"> </a>
-            <h4>{{product.name}}</h4>
-            Giá {{product.price}}đ
+        <div class="col-sm-3">
+            <div class="card" style="width: 18rem;">
+                <a href="/{{product.id}}">
+                    <img  class="card-img-top" src="{{product.image.url}}" alt="Card image cap">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">{{product.name}}</h5>
+                    <p class="card-text">{{product.infomation|safe|linebreaks}}</p>
+                    <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group" role="group" aria-label="First group">
+                            Giá {{product.price}}đ
+                        </div>
+                        <a href="/{{product.id}}" class="btn btn-primary">Mua</a>
+                    </div>
+                </div>
+            </div>
         </div>
         {% endfor %}
         <br/>

@@ -11,7 +11,7 @@ class ProductListView(ListView):
     queryset = Product.objects.all()
     template_name = 'pages/home.html'
     context_object_name = 'Products'
-    paginate_by = 1
+    paginate_by = 5
 """class ProductDetailView(DetailView):
     model = Product
     template_name = 'pages/product.html'"""
