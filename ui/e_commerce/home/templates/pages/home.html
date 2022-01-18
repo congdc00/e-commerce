@@ -3,33 +3,85 @@
 {% block title %}Home{% endblock %}
 {% load static %}
 {% block content %}
-<div class="container-fluid">
-    <center><img src="{% static 'images/slideshow2.png' %}" class="img-fluid" width="1400" height="200" /></center>
-    <br>
-    <div class="row">
-        {% for product in Products %}
-        <div class="col-sm-3">
-            <div class="card" style="width: 18rem;">
-                <a href="/{{product.id}}">
-                    <img  class="card-img-top" src="{{product.image.url}}" alt="Card image cap">
-                </a>
-                <div class="card-body">
-                    <h5 class="card-title">{{product.name}}</h5>
-                    <p class="card-text">{{product.infomation|safe|linebreaks}}</p>
-                    <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
-                        <div class="btn-group" role="group" aria-label="First group">
-                            Giá {{product.price}}đ
-                        </div>
-                        <a href="/{{product.id}}" class="btn btn-primary">Mua</a>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'images/slideshow1.png' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/slideshow2.png' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/slideshow3.png' %}" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<br>
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Gia dụng</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Thời trang</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Đồ chơi</button>
+  </li>
+</ul>
+
+<div class="row row-cols-1 row-cols-md-4 g-4">
+    {% for product in Products %}
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <a href="/{{product.id}}">
+                <img  class="card-img-top" src="{{product.image.url}}" alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">{{product.name}}</h5>
+                <p class="card-text">{{product.describe|safe|linebreaks}}</p>
+                <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group" role="group" aria-label="First group">
+                        Giá {{product.price}}đ
                     </div>
+                    <a href="/{{product.id}}" class="btn btn-primary"><i class="bi bi-bag-plus-fill"></i></a>
                 </div>
             </div>
         </div>
-        {% endfor %}
-        <br/>
-        {% if page_obj.has_next %}
-        <a href="{{request.path}}?page={{page_obj.next_page_number}}"> Tiếp theo </a>
-        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+<br>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="{{request.path}}?page=1">Trang đầu</a></li>
+                    {% if page_obj.has_previous %}
+                    <li class="page-item"><a class="page-link" href="{{request.path}}?page={{ page_obj.previous_page_number }}">{{ page_obj.previous_page_number }}</a></li>
+                    {% endif %}
+                    <li class="page-item"><a class="page-link" href="{{request.path}}?page={{ page_obj.number }}">{{ page_obj.number }}</a></li>
+                    {% if page_obj.has_next %}
+                    <li class="page-item"><a class="page-link" href="{{request.path}}?page={{page_obj.next_page_number}}">{{page_obj.next_page_number}}</a></li>
+                    {% endif %}
+                    <li class="page-item"><a class="page-link" href="{{request.path}}?page={{ page_obj.paginator.num_pages }}">Trang cuối</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </div>
 {% endblock %}

@@ -6,6 +6,7 @@ class Product(models.Model):
     image = models.ImageField(null = True)
     price = models.IntegerField()
     number = models.IntegerField()
+    describe = models.TextField(null = True, max_length = 300)
     infomation = models.TextField()
     location = models.TextField()
 

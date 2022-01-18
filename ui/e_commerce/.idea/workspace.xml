@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24888bf1-b219-4019-9e5f-6c3a7452a586" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../sourc_code/ui/ui_shop.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_media/21060182_XX.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_media/do-choi-trung-khong-lo-hatchimals-secret-surprise-1000x1000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_media/download.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/migrations/0006_product_describe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/templates/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/templates/personal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/images/slideshow1.png" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/images/slideshow1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +48,22 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Máy tính/Django-E-commerce-web-template" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24888bf1-b219-4019-9e5f-6c3a7452a586" name="Changes" comment="" />
+      <created>1642500549487</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642500549487</updated>
+      <workItem from="1642500550647" duration="1377000" />
+    </task>
+    <servers />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
