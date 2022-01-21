@@ -1,47 +1,125 @@
 {% extends "pages/base.html" %}
-
+{% load static %}
 {% block title %}{{product.name}}{% endblock %}
 
 {% block content %}
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-5">
-                <img src="{{product.image.url}}" width="500px" height="500px" />
-            </div>
-            <div class="col-sm-6">
-                <div class="shadow-lg p-3 mb-5 bg-body rounded">
-                    <h3>{{product.name}}</h3>
-                    Mô tả sản phẩm
-                    {{product.infomation|safe|linebreaks}}
-                    <h6> Số lượng {{product.number}}</h6>
-                    <h6> Địa chỉ {{product.location}}</h6>
-                    <h6> Giá {{product.price}} đ</h6>
+<br>
+<div class="row gx-5">
+    <div class="col-sm-5 col-md-5">
+        <img src="{{product.image.url}}" width="512px" height="512px" />
+    </div>
+     <div class="col-sm-7 col-md-7">
+        <div class="shadow-sm p-3 mb-4 bg-body rounded">
+            <center><h3>{{product.name}}</h3></center>
+            <span class="badge rounded-pill bg-primary">Công nghệ</span>
+            <br>
+            <div class="row">
+                <div class="col-9">
+                   Đánh giá
+                </div>
+                <div class="col-3">
+                    Chia sẻ
                 </div>
             </div>
+            <br>
+            Chế độ bảo hành
+            <br>
+            Chọn loại
+            <p class="fs-1 text-end text-danger">{{product.price}} đ</p>
+        </div>
+
+         <div class="row g-3 ">
+                <div class="col-sm-3">
+                   <div class="input-group mb-1">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Số lượng</span>
+                      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </div>
+             <div class="col-sm">
+                 {{product.number}} sản phẩm có sẵn
+             </div>
+             <div class="col">
+                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button class="btn btn-primary me-md-2" type="button">Thêm vào giỏ hàng</button>
+                  <button class="btn btn-primary" type="button">Mua</button>
+                </div>
+             </div>
         </div>
     </div>
-    <br>
-    <h3><strong>Bình luận</strong></h3>
-    <br>
-    {% for comment in product.comments.all %}
-        <div class="shadow-sm p-3 mb-5 bg-body rounded">
-            <h5><p class="text-success">{{comment.author}}</p></h5>
+</div>
+<br>
+<div class="row gx-5">
+    <div class="col-sm-5 col-md-5">
+        <div class="shadow-sm p-3 mb-4 bg-body rounded">
+            <div class="row">
+                <div class="col-2">
+                    <img src="{% static 'images/logo_shop1.png' %}" class="rounded-circle" width="50px" height="50px">
+                </div>
+                <div class="col-7">
+                   <h5>Cửa hàng drone</h5>
+                    Đánh giá: 5 | Theo dõi:  | Phản hồi:
+                </div>
+                <div class="col-3">
+                    <div class="d-grid gap-1">
+                        <button type="button" class="btn btn-outline-primary">Xem shop</button>
+                        <button type="button" class="btn btn-outline-primary">Chat</button>
+                    </div>
+                </div>
+            </div>
 
-            <p class="font-monospace">{{comment.body|linebreaks}}</p>
-            <p class="fst-italic">{{comment.date}}</p>
         </div>
-    {% endfor %}
-
-    {% if user.username %}
-    <div class="container-fluid">
-        <form action="{% url 'product' product.pk %}" method="POST">
-            {% csrf_token %}
-            <p><label>Đánh giá sản phẩm:</label></p>
-            {{form.body}}
-            <br/>
-            <input type="submit" class="btn btn-primary" value="Bình luận"/>
-        </form>
     </div>
-    {% endif %}
+    <div class="col-sm-7 col-md-7">
+        <div class="shadow-sm p-3 mb-4 bg-body rounded">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Mô tả</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Chi tiết</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Hướng dẫn sử dụng</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h3>Mô tả sản phẩm</h3>
+                    {{product.infomation|safe|linebreaks}}
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <h3>Chi tiết sản phẩm</h3>
+                    <h6> Địa chỉ {{product.location}}</h6>
+              </div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<br>
+<h3><strong>Bình luận</strong></h3>
+<br>
+{% for comment in product.comments.all %}
+    <div class="shadow-sm p-3 mb-5 bg-body rounded">
+        <h5><p class="text-success">{{comment.author}}</p></h5>
+        <p class="font-monospace">{{comment.body|linebreaks}}</p>
+        <p class="card-text"><small class="text-muted">{{comment.date}}</small></p>
+    </div>
+{% endfor %}
+
+{% if user.username %}
+<div class="container-fluid">
+    <form action="{% url 'product' product.pk %}" method="POST">
+        {% csrf_token %}
+        <p><label>Đánh giá sản phẩm:</label></p>
+        {{form.body}}
+        <br/>
+        <input type="submit" class="btn btn-primary" value="Bình luận"/>
+    </form>
+</div>
+{% endif %}
 
 {% endblock %}

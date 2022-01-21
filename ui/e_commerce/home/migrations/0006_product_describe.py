@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AddField(
-            model_name='product',
+            model_name='home',
             name='describe',
             field=models.TextField(max_length=300, null=True),
         ),

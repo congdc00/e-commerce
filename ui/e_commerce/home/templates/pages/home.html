@@ -18,7 +18,7 @@
             <img src="{% static 'images/slideshow2.png' %}" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-            <img src="{% static 'images/slideshow3.png' %}" class="d-block w-100" alt="...">
+            <img src="{% static 'images/slideshow1.png' %}" class="d-block w-100" alt="...">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -53,11 +53,9 @@
             <div class="card-body">
                 <h5 class="card-title">{{product.name}}</h5>
                 <p class="card-text">{{product.describe|safe|linebreaks}}</p>
-                <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group" role="group" aria-label="First group">
-                        Giá {{product.price}}đ
-                    </div>
-                    <a href="/{{product.id}}" class="btn btn-primary"><i class="bi bi-bag-plus-fill"></i></a>
+                <div class=" clearfix">
+                  <button type="button" class="btn btn-secondary float-start">Giá {{product.price}}đ</button>
+                  <a href="/{{product.id}}" class="btn btn-primary float-end"><i class="bi bi-bag-plus-fill"></i></a>
                 </div>
             </div>
         </div>
@@ -65,23 +63,38 @@
     {% endfor %}
 </div>
 <br>
-<div class="container">
-    <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-            <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="{{request.path}}?page=1">Trang đầu</a></li>
-                    {% if page_obj.has_previous %}
-                    <li class="page-item"><a class="page-link" href="{{request.path}}?page={{ page_obj.previous_page_number }}">{{ page_obj.previous_page_number }}</a></li>
-                    {% endif %}
-                    <li class="page-item"><a class="page-link" href="{{request.path}}?page={{ page_obj.number }}">{{ page_obj.number }}</a></li>
-                    {% if page_obj.has_next %}
-                    <li class="page-item"><a class="page-link" href="{{request.path}}?page={{page_obj.next_page_number}}">{{page_obj.next_page_number}}</a></li>
-                    {% endif %}
-                    <li class="page-item"><a class="page-link" href="{{request.path}}?page={{ page_obj.paginator.num_pages }}">Trang cuối</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</div>
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+
+    {% if page_obj.has_previous %}
+    <li class="page-item">
+      <a class="page-link" href="{{request.path}}?page=1">Trang đầu</a>
+    </li>
+    {% else %}
+    <li class="page-item disabled">
+        <span class="page-link">Trang trước</span>
+    </li>
+    {% endif %}
+
+    {% if page_obj.has_previous %}
+    <li class="page-item"><a class="page-link" href="{{request.path}}?page={{ page_obj.previous_page_number }}">{{ page_obj.previous_page_number }}</a></li>
+    {% endif %}
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="{{request.path}}?page={{ page_obj.number }}">{{ page_obj.number }}</a>
+    </li>
+    {% if page_obj.has_next %}
+    <li class="page-item"><a class="page-link" href="{{request.path}}?page={{page_obj.next_page_number}}">{{page_obj.next_page_number}}</a></li>
+    {% endif %}
+
+    {% if page_obj.has_next %}
+    <li class="page-item">
+        <a class="page-link" href="{{request.path}}?page={{page_obj.next_page_number}}">Trang tiếp</a>
+    </li>
+    {% else %}
+    <li class="page-item disabled">
+        <span class="page-link">Trang tiếp</span>
+    </li>
+    {% endif %}
+  </ul>
+</nav>
 {% endblock %}

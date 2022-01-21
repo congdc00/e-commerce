@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.RenameField(
             model_name='comment',
-            old_name='product',
+            old_name='home',
             new_name='Product',
         ),
         migrations.RenameField(

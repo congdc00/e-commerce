@@ -5,25 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24888bf1-b219-4019-9e5f-6c3a7452a586" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data_media/21060182_XX.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_media/do-choi-trung-khong-lo-hatchimals-secret-surprise-1000x1000.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_media/download.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/migrations/0006_product_describe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/static/images/logo_shop1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authentication/templates/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/templates/personal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/images/slideshow1.png" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/images/slideshow1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_commerce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/migrations/0002_product_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/migrations/0002_product_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/migrations/0003_comment.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/migrations/0003_comment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/migrations/0004_rename_product_comment_product_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/migrations/0004_rename_product_comment_product_and_more.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/migrations/0005_rename_product_comment_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/migrations/0005_rename_product_comment_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/migrations/0006_product_describe.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/migrations/0006_product_describe.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/pages/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -41,6 +62,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -48,9 +70,14 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Máy tính/Django-E-commerce-web-template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/home/static/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DINH CHI CONG\OneDrive - Hanoi University of Science and Technology\Project\Project_1\drone-delivery\ui\e_commerce\home\static\images" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -66,6 +93,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

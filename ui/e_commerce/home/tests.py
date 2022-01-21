@@ -12,5 +12,5 @@ class SimpleTests(SimpleTestCase):
             name = 'test_name'
         )
     def test_string_representation(self):
-        product = Product (name='simple')
-        self.assertEqual(str(product), product.name)"""
+        home = Product (name='simple')
+        self.assertEqual(str(home), home.name)"""

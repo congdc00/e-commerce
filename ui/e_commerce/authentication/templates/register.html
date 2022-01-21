@@ -1,19 +1,105 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+	<title>Login</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+	<style>
+		body,
+		html {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			background: #f0efeb !important;
+		}
+		.user_card {
+			width: 350px;
+			margin-top: auto;
+			margin-bottom: auto;
+			background: #023e8a;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			padding: 10px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			border-radius: 5px;
+
+		}
+
+
+	</style>
+
 </head>
 <body>
-    <center>
-        <form action = '.' method="POST">
-            {% csrf_token %}
-            {{form.as_p}}
-            <input type="submit" value="Đăng ký"/>
-        </form>
-    </center>
+	<div class="container h-100">
+		<div class="d-flex justify-content-center h-100">
+			<div class="user_card">
+				<div class="d-flex justify-content-center">
+					<h3 class="text-light" id="form-title">Đăng ký tài khoản</h3>
+				</div>
+				<div class="d-flex justify-content-center form_container">
+
+					<form method="POST" action="">
+                        {% csrf_token %}
+						<div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="bi bi-person-plus-fill"></i></span>
+							</div>
+                            {{form.username}}
+						</div>
+						<div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="bi bi-envelope-open-fill"></i></span>
+							</div>
+                            {{form.email}}
+						</div>
+						<div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="bi bi-key-fill"></i></span>
+							</div>
+                            {{form.password1}}
+						</div>
+						<div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="bi bi-key-fill"></i></span>
+							</div>
+                            {{form.password2}}
+						</div>
+                        <div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="bi bi-telephone-plus-fill"></i></span>
+							</div>
+                            {{form.phone}}
+						</div>
+
+				   		<div class="d-flex justify-content-center mt-3 login_container">
+				 			<input class="btn btn-primary" type="submit" value="Đăng ký">
+				   		</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+
+		//Query All input fields
+		var form_fields = document.getElementsByTagName('input')
+		form_fields[1].placeholder='Tên đăng nhập';
+		form_fields[2].placeholder='Email';
+		form_fields[3].placeholder='Nhập mật khẩu';
+		form_fields[4].placeholder='Nhập lại mật khẩu';
+        form_fields[5].placeholder='Điện thoại';
+
+		for (var field in form_fields){
+			form_fields[field].className += ' form-control'
+		}
+	</script>
 </body>
 </html>

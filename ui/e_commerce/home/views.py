@@ -14,13 +14,13 @@ class ProductListView(ListView):
     paginate_by = 30
 """class ProductDetailView(DetailView):
     model = Product
-    template_name = 'pages/product.html'"""
+    template_name = 'pages/home.html'"""
 def contact(request):
     return render(request, 'pages/contact.html')
-"""def product(request, id):
-    product = Product.objects.get(id = id)
-    Data = {'Product': product}
-    return render(request, 'pages/product.html', Data)"""
+"""def home(request, id):
+    home = Product.objects.get(id = id)
+    Data = {'Product': home}
+    return render(request, 'pages/home.html', Data)"""
 def error(request):
     return render(request, 'pages/error.html')
 
