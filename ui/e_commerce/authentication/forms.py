@@ -1,4 +1,5 @@
 import re
+
 from django.core.exceptions import ObjectDoesNotExist
 """ Dùng để custom admin """
 from django.contrib.auth import get_user_model
@@ -33,10 +34,6 @@ class RegistrationForm(forms.Form):
     def save(self):
         User.objects.create_user(username=self.cleaned_data['username'], email=self.cleaned_data['email'], password=self.cleaned_data['password1'], phone=self.cleaned_data['phone'])
 
-class UpdateUser(forms.Form):
-    phone = forms.IntegerField(label='Số điệnt thoại')
-    def update(self, id):
-        User.objects.filter(id = id).update(phone = self.cleaned_data['phone'])
 
 class CommentForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):

@@ -2,11 +2,9 @@ from datetime import datetime
 import os
 
 import torch
-from django.views.decorators import gzip
 import cv2
-import threading
 from django.http import HttpResponseRedirect, StreamingHttpResponse
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
 from facenet_pytorch.models.mtcnn import MTCNN
 
 from.forms import RegistrationForm
@@ -61,3 +59,5 @@ def stream():
 
 def video_feed(request):
     return StreamingHttpResponse(stream(), content_type='multipart/x-mixed-replace; boundary=frame')
+
+

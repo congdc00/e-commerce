@@ -29,3 +29,4 @@ class Variation(models.Model):
     sale_price = models.IntegerField(default=0)
     inventory = models. IntegerField(default=0)
     active = models.BooleanField(default=True)
+
