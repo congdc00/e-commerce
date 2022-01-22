@@ -47,7 +47,7 @@
     {% for product in Products %}
     <div class="col">
         <div class="card" style="width: 18rem;">
-            <a href="/{{product.id}}">
+            <a href="product/{{product.id}}">
                 <img  class="card-img-top" src="{{product.image.url}}" alt="Card image cap">
             </a>
             <div class="card-body">
@@ -55,7 +55,7 @@
                 <p class="card-text">{{product.describe|safe|linebreaks}}</p>
                 <div class=" clearfix">
                   <button type="button" class="btn btn-secondary float-start">Giá {{product.price}}đ</button>
-                  <a href="/{{product.id}}" class="btn btn-primary float-end"><i class="bi bi-bag-plus-fill"></i></a>
+                  <a href="product/{{product.id}}" class="btn btn-primary float-end"><i class="bi bi-bag-plus-fill"></i></a>
                 </div>
             </div>
         </div>

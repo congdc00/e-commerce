@@ -1,7 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
-from .forms import CommentForm
-from .models import Product, Comment
+from authentication.forms import CommentForm
+from product.models import Product
+from authentication.models import Comment
 from django.views.generic import ListView, DetailView
 
 # Create your views here.
@@ -24,12 +25,4 @@ def contact(request):
 def error(request):
     return render(request, 'pages/error.html')
 
-def product(request, pk):
-    product = get_object_or_404(Product, pk=pk)
-    form = CommentForm()
-    if request.method == "POST":
-        form = CommentForm(request.POST, author=request.user, product=product)
-        if form.is_valid():
-            form.save()
-            return HttpResponseRedirect(request.path)
-    return render(request, "pages/product.html", {"product": product, "form": form})
+

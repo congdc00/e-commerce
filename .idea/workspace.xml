@@ -2,79 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1841dc6-b1a7-4f7b-8db6-ad9b80f2a7a1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ui/e_commerce/authentication/templates/address.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/e_commerce/authentication/templates/drone_delivery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/e_commerce/authentication/templates/infomation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/e_commerce/order/migrations/0002_rename_oder_order.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/e_commerce/product/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/e_commerce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/e_commerce/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai/object_tracking.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ai/object_tracking/object_tracking.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ui/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/authentication/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/authentication/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/authentication/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/authentication/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/authentication/templates/personal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/authentication/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/authentication/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/authentication/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/cart/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/cart/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/cart/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/cart/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/drone1.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/e_commerce/e_commerce/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/e_commerce/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/migrations/0002_product_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/migrations/0002_product_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/migrations/0003_comment.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/migrations/0003_comment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/migrations/0004_rename_product_comment_product_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/migrations/0004_rename_product_comment_product_and_more.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/migrations/0005_rename_product_comment_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/migrations/0005_rename_product_comment_product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/migrations/0006_product_describe.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/migrations/0006_product_describe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-grid.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-grid.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-grid.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-grid.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-reboot.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-reboot.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-reboot.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-utilities.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-utilities.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-utilities.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-utilities.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-utilities.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-utilities.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-utilities.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-utilities.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap.rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/css/bootstrap.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/images/logo_Ecommerce.png" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/images/logo_Ecommerce.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/images/slideshow1.png" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/images/slideshow1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/images/slideshow2.png" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/images/slideshow2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/images/slideshow3.png" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/images/slideshow3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/js/bootstrap.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/js/bootstrap.esm.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/js/bootstrap.esm.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/js/bootstrap.esm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/js/bootstrap.esm.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/js/bootstrap.esm.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/js/bootstrap.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/static/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/static/js/bootstrap.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/templates/pages/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/templates/pages/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/templates/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/templates/pages/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/templates/pages/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/templates/pages/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/templates/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/templates/pages/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/templates/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/templates/pages/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/templates/pages/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/templates/pages/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/home/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/migrations/0002_product_image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/migrations/0003_comment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/migrations/0004_rename_product_comment_product_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/migrations/0005_rename_product_comment_product.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/migrations/0006_product_describe.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/templates/pages/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/home/templates/pages/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/templates/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/home/templates/pages/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/templates/pages/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/templates/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/home/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/order/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/order/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/order/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/order/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/product/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,10 +68,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ui/e_commerce" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DINH CHI CONG\OneDrive - Hanoi University of Science and Technology\Project\Project_1\drone-delivery\ai\object_tracking" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

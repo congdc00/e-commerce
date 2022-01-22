@@ -1,5 +1,5 @@
 from django.test import TestCase, SimpleTestCase
-from .models import Product
+from product.models import Product
 # Create your tests here.
 class SimpleTests(SimpleTestCase):
     def test_home_page_status (self):

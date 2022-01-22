@@ -1,0 +1,106 @@
+{% extends "pages/base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<center>
+    <h1>Quản lý thông tin</h1>
+</center>
+
+<br>
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-2">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Cá nhân</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Địa chỉ</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Thanh toán</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Tài khoản</a>
+        </div>
+      </div>
+      <div class="col-7">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                        <div class="accordion-body">
+                            Họ:
+                            <input class="form-control" type="text" placeholder={{user.first_name}} aria-label="Disabled input example" disabled>
+                            <br>
+                            Tên
+                            <input class="form-control" type="text" placeholder={{user.last_name}} aria-label="Disabled input example" disabled>
+                          <br>
+                          Giới tính:
+                            <input class="form-control" type="text" placeholder={{user.sex}} aria-label="Disabled input example" disabled>
+                          <br>
+                          Tuổi:
+                            <input class="form-control" type="text" placeholder={{user.age}} aria-label="Disabled input example" disabled>
+                          <br>
+                          Căn cước công dân:
+                            <input class="form-control" type="text" placeholder={{user.id_card}} aria-label="Disabled input example" disabled>
+                          <br>
+                          <div class="d-grid gap-2 col-3 mx-auto">
+                            <a class="btn btn-primary" role="button">Chỉnh sửa</a>
+                          </div>
+                        </div>
+                </div>
+
+          </div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+              <div class="shadow-sm p-3 mb-5 bg-body rounded">
+              Địa chỉ:
+              <input class="form-control" type="text" placeholder="{{user.address}}" aria-label="Disabled input example" disabled>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+              <div class="shadow-sm p-3 mb-5 bg-body rounded">
+              Thẻ ngân hàng:
+              <input class="form-control" type="text" placeholder="{{user.id_card}}" aria-label="Disabled input example" disabled>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+              <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                    <div class="accordion-body">
+                      Tài khoản:
+                        <input class="form-control" type="text" placeholder="{{user.username}}" aria-label="Disabled input example" disabled>
+                      <br>
+                      Số điện thoại:
+                        <input class="form-control" type="text" placeholder=+84{{user.phone}} aria-label="Disabled input example" disabled>
+                      <br>
+                      Địa chỉ email:
+                      <input class="form-control" type="text" placeholder={{user.email}} aria-label="Disabled input example" disabled>
+                      <br>
+                      <div class="d-grid gap-2 col-3 mx-auto">
+                        <a class="btn btn-primary" href="#" role="button">Chỉnh sửa</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-sm-3">
+            <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                <h4>Cấp hiện tại  <span class="badge bg-secondary">{{user.level}}</span></h4>
+                <br>
+                Hãy điền thêm thông tin để lên cấp
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+            </div>
+           <div class="shadow-sm p-3 mb-5 bg-body rounded">
+               <h4>Giao hàng bằng drone </h4>
+                      {% if user.level == 2 %}
+                        Bạn đã đăng ký giao hàng bằng drone
+                        <button type="button" class="btn btn-warning"> Hủy đăng ký </button>
+                      {% else %}
+                        Bạn chưa đăng ký giao hàng bằng drone
+                        <a class="btn btn-primary" href="{% url 'drone_delivery' %}">Đăng ký ngay</a>
+                      {% endif %}
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

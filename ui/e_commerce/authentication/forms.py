@@ -4,6 +4,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth import get_user_model
 User = get_user_model()
 from django import forms
+from .models import Comment
 
 class RegistrationForm(forms.Form):
     username = forms.CharField(label='Tài khoản', max_length=30)
@@ -31,3 +32,24 @@ class RegistrationForm(forms.Form):
 
     def save(self):
         User.objects.create_user(username=self.cleaned_data['username'], email=self.cleaned_data['email'], password=self.cleaned_data['password1'], phone=self.cleaned_data['phone'])
+
+class UpdateUser(forms.Form):
+    phone = forms.IntegerField(label='Số điệnt thoại')
+    def update(self, id):
+        User.objects.filter(id = id).update(phone = self.cleaned_data['phone'])
+
+class CommentForm(forms.ModelForm):
+    def __init__(self, *args, **kwargs):
+        self.author = kwargs.pop('author', None)
+        self.product = kwargs.pop('product', None)
+        super().__init__(*args, **kwargs)
+
+    def save(self, commit=True):
+        comment = super().save(commit=False)
+        comment.author = self.author
+        comment.product = self.product
+        comment.save()
+
+    class Meta:
+        model = Comment
+        fields = ["body"]
