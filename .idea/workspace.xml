@@ -8,6 +8,7 @@
       <change afterPath="$PROJECT_DIR$/ui/e_commerce/order/migrations/0002_rename_oder_order.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ui/e_commerce/product/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ai/object_tracking.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ai/object_tracking/object_tracking.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ui/.idea/workspace.xml" afterDir="false" />
@@ -43,6 +44,9 @@
       <change beforePath="$PROJECT_DIR$/ui/e_commerce/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/e_commerce/product/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/e_commerce/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/views.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/ui/e_commerce/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/e_commerce/product/models.py" afterDir="false" />
+>>>>>>> 84e0c7b33ff84b07b7283ddd65483f6b99764c8f
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

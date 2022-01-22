@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24888bf1-b219-4019-9e5f-6c3a7452a586" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/authentication/templates/address.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/authentication/templates/drone_delivery.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/authentication/templates/infomation.html" afterDir="false" />
@@ -25,12 +26,18 @@
       <change beforePath="$PROJECT_DIR$/e_commerce/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/e_commerce/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/forms.py" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/../../.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 84e0c7b33ff84b07b7283ddd65483f6b99764c8f
       <change beforePath="$PROJECT_DIR$/home/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/home/migrations/0002_product_image.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/home/migrations/0003_comment.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/home/migrations/0004_rename_product_comment_product_and_more.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/home/migrations/0005_rename_product_comment_product.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/home/migrations/0006_product_describe.py" beforeDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/pages/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/home.html" afterDir="false" />
@@ -44,6 +51,9 @@
       <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/views.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
+>>>>>>> 84e0c7b33ff84b07b7283ddd65483f6b99764c8f
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +103,11 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
+=======
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive - Hanoi University of Science and Technology/Project/Project_1/drone-delivery/ui" />
+>>>>>>> 84e0c7b33ff84b07b7283ddd65483f6b99764c8f
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
