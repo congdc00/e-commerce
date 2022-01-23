@@ -3,7 +3,6 @@ data
 *.docx
 .idea
 __pycache__
-ui/e_commerce/home/migrations/__pycache__/__init__.cpython-39.pyc
-ui/e_commerce/home/migrations/__pycache__/__init__.cpython-39.pyc
-ui/e_commerce/home/__pycache__/forms.cpython-39.pyc
-ui/e_commerce/home/__pycache__/models.cpython-39.pyc
+data_media
+
+

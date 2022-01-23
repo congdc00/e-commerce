@@ -12,7 +12,7 @@ class CustomUser(AbstractUser):
     id_card = models. IntegerField (null=True)
     phone = models. IntegerField (null=True)
     age = models. IntegerField (default=0)
-    sex_choice = ((0, "Nữ"), (1, "nam"), (2, "không xác định"))
+    sex_choice = ((0, "Nữ"), (1, "Nam"), (2, "không xác định"))
     sex = models.IntegerField (choices=sex_choice, default=2)
     address = models.CharField (default='', max_length=255)
 

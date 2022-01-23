@@ -4,6 +4,7 @@ from django.core.exceptions import ObjectDoesNotExist
 """ Dùng để custom admin """
 from django.contrib.auth import get_user_model
 User = get_user_model()
+
 from django import forms
 from .models import Comment
 
@@ -35,6 +36,7 @@ class RegistrationForm(forms.Form):
         User.objects.create_user(username=self.cleaned_data['username'], email=self.cleaned_data['email'], password=self.cleaned_data['password1'], phone=self.cleaned_data['phone'])
 
 
+
 class CommentForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         self.author = kwargs.pop('author', None)
@@ -50,3 +52,43 @@ class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ["body"]
+
+class UpdatePersonalForm(forms.ModelForm):
+
+    # create meta class
+    class Meta:
+        # specify model to be used
+        model = User
+
+        # specify fields to be used
+        fields = [
+            "first_name",
+            "last_name",
+            "sex",
+            "age",
+            "id_card",]
+
+class UpdateAddressForm(forms.ModelForm):
+
+    # create meta class
+    class Meta:
+        # specify model to be used
+        model = User
+
+        # specify fields to be used
+        fields = [
+            "address",]
+
+class UpdateAccountForm(forms.ModelForm):
+
+    # create meta class
+    class Meta:
+        # specify model to be used
+        model = User
+
+        # specify fields to be used
+        fields = [
+            "username",
+            "phone",
+            "email",
+        ]
