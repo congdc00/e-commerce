@@ -40,7 +40,7 @@
                             <input class="form-control" type="text" placeholder={{user.id_card}} aria-label="Disabled input example" disabled>
                           <br>
                           <div class="d-grid gap-2 col-3 mx-auto">
-                            <a class="btn btn-primary" role="button">Chỉnh sửa</a>
+                            <a href="{{user.id}}/" class="btn btn-primary" role="button">Chỉnh sửa</a>
                           </div>
                         </div>
                 </div>
@@ -48,14 +48,21 @@
           </div>
           <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
               <div class="shadow-sm p-3 mb-5 bg-body rounded">
-              Địa chỉ:
-              <input class="form-control" type="text" placeholder="{{user.address}}" aria-label="Disabled input example" disabled>
+                  Địa chỉ:
+                  <input class="form-control" type="text" placeholder="{{user.address}}" aria-label="Disabled input example" disabled>
+                  <br>
+                  <div class="d-grid gap-2 col-3 mx-auto">
+                    <a href="address/{{user.id}}/" class="btn btn-primary" role="button">Chỉnh sửa</a>
+                  </div>
               </div>
           </div>
           <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
               <div class="shadow-sm p-3 mb-5 bg-body rounded">
-              Thẻ ngân hàng:
-              <input class="form-control" type="text" placeholder="{{user.id_card}}" aria-label="Disabled input example" disabled>
+                Thẻ ngân hàng:
+                <input class="form-control" type="text" placeholder="{{user.id_card}}" aria-label="Disabled input example" disabled>
+                <div class="d-flex justify-content-center mt-3 login_container">
+                  <button type="submit" class="btn btn-primary">Cập nhập</button>
+                </div>
               </div>
           </div>
           <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
@@ -71,7 +78,8 @@
                       <input class="form-control" type="text" placeholder={{user.email}} aria-label="Disabled input example" disabled>
                       <br>
                       <div class="d-grid gap-2 col-3 mx-auto">
-                        <a class="btn btn-primary" href="#" role="button">Chỉnh sửa</a>
+                        <a href="account/{{user.id}}/" class="btn btn-primary" role="button">Chỉnh sửa</a>
+                      <a href="{% url 'password_change' %}" class="btn btn-primary" role="button">Đổi mật khẩu</a>
                       </div>
                   </div>
               </div>
