@@ -4,7 +4,7 @@
 * Các chức năng AI phục vụ mục đích vận chuyển hàng
 * Website bán hàng 
 ## Tài liệu
-Các tài liệu đi kèm được lưu trữ tại [Drive](http://https://drive.google.com/drive/folders/1TVq7Tfm4zC5uZw7qKQdM0sZjZI-KzRoR?usp=sharing)
+Các tài liệu đi kèm được lưu trữ tại [Drive](https://drive.google.com/drive/folders/1TVq7Tfm4zC5uZw7qKQdM0sZjZI-KzRoR?usp=sharing)
 ## Các công cụ cần thiết
 1. Pycharm
 2. DataSpell
