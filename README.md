@@ -1,6 +1,6 @@
 # Dự án drone delivery
 ## Giới thiệu
-Đây là dự án về bài toán giao hàng bằng drone với các chức năng được xây dựng từ giao diện cho đến phần giao hàng tới tay người dùng, bao gồm các thành phần
+Đây là dự án về bài toán giao hàng bằng drone với các chức năng được xây dựng từ giao diện cho đến phần giao hàng tới tay người dùng. Sử dụng ngôn ngữ chính là python, bao gồm các thành phần
 * Các chức năng AI phục vụ mục đích vận chuyển hàng
 * Website bán hàng  
 Mọi góp ý xin liên hệ
