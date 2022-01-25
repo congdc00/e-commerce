@@ -6,4 +6,4 @@
 ## Tài liệu
 Các tài liệu đi kèm được lưu trữ tại [Drive](http://https://drive.google.com/drive/folders/1TVq7Tfm4zC5uZw7qKQdM0sZjZI-KzRoR?usp=sharing)
 ## Hướng dẫn chạy
-Bước 1: vào terminal và gõ >pip install library 
+Bước 1: vào terminal và gõ > pip install library 
