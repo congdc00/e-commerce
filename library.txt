@@ -1,6 +1,14 @@
 opencv-python
 torch
 facenet-pytorch
-PIL
 django
 django-mathfilters
+facenet_pytorch
+numpy
+zipfile
+cvzone
+splitfolders
+torchvision
+glob
+os
+urllib
