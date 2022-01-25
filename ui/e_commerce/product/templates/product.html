@@ -11,7 +11,7 @@
      <div class="col-sm-7 col-md-7">
         <div class="shadow-sm p-3 mb-4 bg-body rounded">
             <center><h3>{{product.name}}</h3></center>
-            <span class="badge rounded-pill bg-primary">Công nghệ</span>
+            <span class="badge rounded-pill bg-primary">Quần áo</span>
             <br>
             <div class="row">
                 <div class="col-9">
@@ -31,7 +31,7 @@
          <div class="row g-3 ">
                 <div class="col-sm-3">
                        <p class="sl"><strong>Số lượng:</strong>
-                           <input type="humber" name="quantitys" value="1" min="1" id="number">
+                           <input type="number" class="form-control" name="quantitys" value="1" min="1" id="number">
                        </p>
                 </div>
                 <div class="col-sm">
@@ -39,7 +39,7 @@
                 </div>
                 <div class="col">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                      <button class="btn btn-primary me-md-2" type="button">Thêm vào giỏ hàng</button>
+                      <button class="btn btn-primary me-md-2" onclick="addCart({{product.id}})">Thêm vào giỏ hàng</button>
                       <button class="btn btn-primary" type="button">Mua</button>
                     </div>
                 </div>
@@ -84,13 +84,15 @@
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <h3>Mô tả sản phẩm</h3>
-                    {{product.infomation|safe|linebreaks}}
+                    {{product.information|safe|linebreaks}}
               </div>
               <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                     <h3>Chi tiết sản phẩm</h3>
                     <h6> Địa chỉ {{product.location}}</h6>
               </div>
-              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                  {{product.guide|safe|linebreaks}}
+              </div>
             </div>
         </div>
     </div>

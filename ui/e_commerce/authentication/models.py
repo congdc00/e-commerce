@@ -10,6 +10,7 @@ class CustomUser(AbstractUser):
     level = models.IntegerField (choices=num_level, default=0)
 
     id_card = models. IntegerField (null=True)
+    bank_card = models. IntegerField (null=True)
     phone = models. IntegerField (null=True)
     age = models. IntegerField (default=0)
     sex_choice = ((0, "Nữ"), (1, "Nam"), (2, "không xác định"))

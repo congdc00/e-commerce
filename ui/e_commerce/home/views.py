@@ -1,5 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
+from django.template.loader import render_to_string
+
 from authentication.forms import CommentForm
 from product.models import Product
 from authentication.models import Comment
@@ -12,7 +14,7 @@ class ProductListView(ListView):
     queryset = Product.objects.all()
     template_name = 'pages/home.html'
     context_object_name = 'Products'
-    paginate_by = 30
+    paginate_by = 4
 """class ProductDetailView(DetailView):
     model = Product
     template_name = 'pages/home.html'"""
@@ -24,5 +26,4 @@ def contact(request):
     return render(request, 'pages/home.html', Data)"""
 def error(request):
     return render(request, 'pages/error.html')
-
 

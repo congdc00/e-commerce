@@ -1,0 +1,57 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% block title %}Giỏ hàng{% endblock %}
+{% block content %}
+{% load mathfilters %}
+
+<center><h1>Giỏ hàng</h1></center>
+<br>
+<div class="shadow-sm p-1 mb-1 bg-body rounded">
+    <table class="table table-borderless">
+      <thead>
+        <tr>
+          <th scope="col">Sản phẩm</th>
+          <th scope="col">Đơn giá</th>
+          <th scope="col">Số lượng</th>
+          <th scope="col">Số tiền</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+{% for key,product in request.session.cart.items %}
+
+
+            <tr>
+              <th >
+                  <img src="{% static '' %}{{product.image}}" width="75px" height="75px">
+                  {{product.name}}
+              </th>
+              <td>
+                  {{product.price}}đ
+              </td>
+              <td>{{product.num}}</td>
+              <td>{{product.price|mul:product.num}}</td>
+
+              <td>
+                    <a href="handle_cart.html?&action=deleteall" class="btn btn-button" onclick="return confirm('bạn có chắc chẳn hủy đơn hàng này không? ') ">
+                        <i class="bi bi-trash"></i>
+                    </a>
+              </td>
+            </tr>
+
+{% endfor %}
+        </tbody>
+
+    </table>
+</div>
+<div class="shadow-sm p-3 mb-5 bg-body rounded ">
+    <div class=" clearfix">
+        <p class="text float-start">Tổng tiền</p>
+        <p class="text float-end">{{total}}đ</p>
+    </div>
+    <div class=" clearfix">
+        <a href="{% url 'success' %}"><button type="button" class="btn btn-primary float-end" >Mua</button></a>
+    </div>
+</div>
+
+{% endblock %}

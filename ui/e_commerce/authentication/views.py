@@ -11,7 +11,7 @@ from django.http import HttpResponseRedirect, StreamingHttpResponse
 from django.shortcuts import render, get_object_or_404
 from facenet_pytorch.models.mtcnn import MTCNN
 
-from.forms import RegistrationForm,UpdatePersonalForm, UpdateAddressForm, UpdateAccountForm
+from.forms import RegistrationForm,UpdatePersonalForm, UpdateAddressForm, UpdateAccountForm, UpdateBankForm
 from django.contrib.auth import get_user_model
 User = get_user_model()
 # Create your views here.
@@ -129,6 +129,28 @@ def update_account(request, pk):
     context["form"] = form
 
     return render(request, "update_account.html", context)
+
+def update_bank(request, pk):
+    # dictionary for initial data with
+    # field names as keys
+    context ={}
+
+    # fetch the object related to passed id
+    obj = get_object_or_404(User, pk=pk)
+
+    # pass the object as instance in form
+    form = UpdateBankForm(request.POST or None, instance=obj)
+
+    # save the data from the form and
+    # redirect to detail_view
+    if form.is_valid():
+        form.save()
+        return HttpResponseRedirect("/info/information/")
+
+    # add form dictionary to context
+    context["form"] = form
+
+    return render(request, "update_bank.html", context)
 
 class ChangePasswordView(SuccessMessageMixin, PasswordChangeView):
     template_name = 'change_password.html'

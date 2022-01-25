@@ -92,3 +92,14 @@ class UpdateAccountForm(forms.ModelForm):
             "phone",
             "email",
         ]
+class UpdateBankForm(forms.ModelForm):
+
+    # create meta class
+    class Meta:
+        # specify model to be used
+        model = User
+
+        # specify fields to be used
+        fields = [
+            "bank_card",
+        ]

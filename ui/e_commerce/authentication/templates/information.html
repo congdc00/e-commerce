@@ -40,7 +40,7 @@
                             <input class="form-control" type="text" placeholder={{user.id_card}} aria-label="Disabled input example" disabled>
                           <br>
                           <div class="d-grid gap-2 col-3 mx-auto">
-                            <a href="{{user.id}}/" class="btn btn-primary" role="button">Chỉnh sửa</a>
+                            <a href="{{user.id}}/" class="btn btn-primary" role="button">Cập nhập</a>
                           </div>
                         </div>
                 </div>
@@ -52,16 +52,16 @@
                   <input class="form-control" type="text" placeholder="{{user.address}}" aria-label="Disabled input example" disabled>
                   <br>
                   <div class="d-grid gap-2 col-3 mx-auto">
-                    <a href="address/{{user.id}}/" class="btn btn-primary" role="button">Chỉnh sửa</a>
+                    <a href="address/{{user.id}}/" class="btn btn-primary" role="button">Cập nhập</a>
                   </div>
               </div>
           </div>
           <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
               <div class="shadow-sm p-3 mb-5 bg-body rounded">
                 Thẻ ngân hàng:
-                <input class="form-control" type="text" placeholder="{{user.id_card}}" aria-label="Disabled input example" disabled>
+                <input class="form-control" type="text" placeholder="{{user.bank_card}}" aria-label="Disabled input example" disabled>
                 <div class="d-flex justify-content-center mt-3 login_container">
-                  <button type="submit" class="btn btn-primary">Cập nhập</button>
+                  <a href="bank/{{user.id}}/" class="btn btn-primary" role="button">Cập nhập</a>
                 </div>
               </div>
           </div>
@@ -78,7 +78,7 @@
                       <input class="form-control" type="text" placeholder={{user.email}} aria-label="Disabled input example" disabled>
                       <br>
                       <div class="d-grid gap-2 col-3 mx-auto">
-                        <a href="account/{{user.id}}/" class="btn btn-primary" role="button">Chỉnh sửa</a>
+                        <a href="account/{{user.id}}/" class="btn btn-primary" role="button">Cập nhập</a>
                       <a href="{% url 'change_password' %}" class="btn btn-primary" role="button">Đổi mật khẩu</a>
                       </div>
                   </div>

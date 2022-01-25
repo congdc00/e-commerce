@@ -1,0 +1,10 @@
+{% extends "pages/base.html" %}
+
+{% block title %}Home{% endblock %}
+{% load static %}
+{% block content %}
+<center><h1>Thông báo</h1></center>
+<div class="alert alert-primary" role="alert">
+  Bạn đã đăng nhập vào lúc {{user.date_joined}}
+</div>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% block title %}Đơn hàng{% endblock %}
+{% block content %}
+{% load mathfilters %}
+<br>
+<div class="shadow-sm p-3 mb-5 bg-body rounded">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Tất cả</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Chờ xác nhận</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Chờ lấy hàng</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-contact" aria-selected="false">Đang giao</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-contact" aria-selected="false">Đã giao</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-contact" aria-selected="false">Đã hủy</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      {% for key,product in request.session.cart.items %}
+      <tr>
+        <div class=" clearfix">
+          <th >
+            <img src="{% static '' %}{{product.image}}" class="float-start" width="75px" height="75px">
+            {{product.name}}
+          </th>
+          <p class="float-end">
+            {{product.price|mul:product.num}}  vnd
+            <a href="handle_cart.html?&action=deleteall" class="btn btn-danger" onclick="return confirm('bạn có chắc chẳn hủy đơn hàng này không? ') ">
+                  Hủy đơn hàng
+            </a>
+          </p>
+        </div>
+      </tr>
+      {% endfor %}
+    </div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+    </div>
+    <div class="tab-pane fade" id="pills-1" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+    </div>
+    <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+    </div>
+    <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
