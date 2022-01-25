@@ -2,7 +2,9 @@
 ## Giới thiệu
 Đây là dự án về bài toán giao hàng bằng drone với các chức năng được xây dựng từ giao diện cho đến phần giao hàng tới tay người dùng, bao gồm các thành phần
 * Các chức năng AI phục vụ mục đích vận chuyển hàng
-* Website bán hàng 
+* Website bán hàng  
+Mọi góp ý xin liên hệ
+Email: congdc193996@sis.hust.edu.vn  
 ## Tài liệu
 Các tài liệu đi kèm được lưu trữ tại [Drive](https://drive.google.com/drive/folders/1TVq7Tfm4zC5uZw7qKQdM0sZjZI-KzRoR?usp=sharing)
 ## Các công cụ cần thiết
