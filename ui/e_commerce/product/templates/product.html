@@ -14,17 +14,17 @@
             <span class="badge rounded-pill bg-primary">Quần áo</span>
             <br>
             <div class="row">
-                <div class="col-9">
-                   Đánh giá
+                <div class="col-6">
+                   Đánh giá {{product.rate}}
                 </div>
-                <div class="col-3">
-                    Chia sẻ
+                <div class="col-5">
+                    Chia sẻ (Chức năng đang cập nhập)
                 </div>
             </div>
             <br>
-            Chế độ bảo hành
+            Chế độ bảo hành: Mức {{product.warranty}}
             <br>
-            Chọn loại
+            Chọn loại ( Chức năng đang cập nhập )
             <p class="fs-1 text-end text-danger">{{product.price}} đ</p>
         </div>
 
@@ -52,7 +52,7 @@
         <div class="shadow-sm p-3 mb-4 bg-body rounded">
             <div class="row">
                 <div class="col-2">
-                    <img src="{% static 'images/logo_shop1.png' %}" class="rounded-circle" width="50px" height="50px">
+                    <img src="{% static '/data_media/images_home/logo_shop1.png' %}" class="rounded-circle" width="50px" height="50px">
                 </div>
                 <div class="col-7">
                    <h5>Cửa hàng drone</h5>
