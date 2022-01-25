@@ -14,7 +14,7 @@ Các tài liệu đi kèm được lưu trữ tại [Drive](https://drive.google
 * Phần UI  
 Bước 1: vào terminal và gõ pip install library để cài đặt các thư viện cần thiết  
 Bước 2: mở terminal tại địa chỉ ui/e-commerce gõ python manage.py runserver  
-* Phần AI
-Khi đã có 50 thu thập được như trong tài liệu đính kèm có hướng dẫn thì tiến hành 
-Bước 1: Mở thư mục ai\client_recoginition và chạy file extract_face.ipynb để trích xuất embedding 
-Bước 2: Tại cùng thư mục đó chạy file live_recoginittion.ipynb để hiển thị ra các chức năng về human pose và face recognition 
+* Phần AI  
+Khi đã có 50 thu thập được như trong tài liệu đính kèm có hướng dẫn thì tiến hành  
+Bước 1: Mở thư mục ai\client_recoginition và chạy file extract_face.ipynb để trích xuất embedding   
+Bước 2: Tại cùng thư mục đó chạy file live_recoginittion.ipynb để hiển thị ra các chức năng về human pose và face recognition   
