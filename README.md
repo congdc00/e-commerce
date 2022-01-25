@@ -13,9 +13,9 @@ Các tài liệu đi kèm được lưu trữ tại [Drive](https://drive.google
 3. DataGrip
 4. Webstorm
 ## Hướng dẫn chạy
+Trước khi chạy các phần sau cần vào terminal và gõ `pip install -r library.txt` để cài đặt các thư viện cần thiết  
 * Phần UI  
-Bước 1: vào terminal và gõ `pip install library` để cài đặt các thư viện cần thiết  
-Bước 2: mở terminal tại địa chỉ ui/e-commerce gõ `python manage.py runserver` 
+Bước 1: mở terminal tại địa chỉ ui/e-commerce gõ `python manage.py runserver` 
 * Phần AI  
 Khi đã có 50 thu thập được như trong tài liệu đính kèm có hướng dẫn thì tiến hành  
 Bước 1: Mở thư mục ai\client_recoginition và chạy file extract_face.ipynb để trích xuất embedding   
