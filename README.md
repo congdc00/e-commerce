@@ -19,7 +19,7 @@ Các tài liệu đi kèm về cách xây dựng và các tính được lưu tr
 ```
 conda create -n dd python=3.9
 conda activate dd
-pip install -r library.txt
+pip install -r library.txt --no-deps
 ```
 * Phần UI  
 Bước 1: mở terminal tại địa chỉ ui/e-commerce gõ `python manage.py runserver` 
