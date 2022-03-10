@@ -5,13 +5,22 @@
 * Website bán hàng  
 ## Tài liệu
 Các tài liệu đi kèm về cách xây dựng và các tính được lưu trữ tại [Drive](https://drive.google.com/drive/folders/1TVq7Tfm4zC5uZw7qKQdM0sZjZI-KzRoR?usp=sharing)
-## Các công cụ cần thiết
+## Các công cụ cần thiết ( khuyên dùng )
 1. Pycharm
 2. DataSpell
 3. DataGrip
 4. Webstorm
-## Hướng dẫn chạy
-Trước khi chạy các phần sau cần vào terminal và gõ `pip install -r library.txt` để cài đặt các thư viện cần thiết  
+## Setup
+1. Yêu cầu
+- Window 10 trở lên
+- Python v3.8 trở lên
+
+2. Environment 
+```
+conda create -n dd python=3.9
+conda activate dd
+pip install -r library.txt
+```
 * Phần UI  
 Bước 1: mở terminal tại địa chỉ ui/e-commerce gõ `python manage.py runserver` 
 * Phần AI  
